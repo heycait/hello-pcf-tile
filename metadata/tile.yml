@@ -1,0 +1,90 @@
+---
+# General Tile Metadata
+name: caitlyns-tile
+product_version: 0.0.1
+metadata_version: 0.0.1
+label: Caitlyn's Tile
+description: An example no-op tile to get more familiar with Tile structures
+rank: 1
+stemcell_criteria:
+  os: ubuntu-trustry
+  version: "3586.42"
+releases: []
+  # Do I need any releases if I'm just creating a tile that does nothing?
+  # - name: caitlyns-release
+  # file:
+  # version:
+
+
+# Form Properties
+# An example "form" where the label will show up on the left-hand side as a navigation bar
+# between different "froms".
+#
+# This form contains references to properties defined in propert_blueprints as well as set
+# any built-in verifiers used to verify input entered into the property
+form_types:
+  - name: simple-form
+    label: Simple Form Type
+    description: A form with simple configuration text fields
+    # This section sets what fields are in the form which are references to properties
+    # defined in the property_blueprints sections
+    property_inputs:
+      - reference: .properties.example_string_field
+        label: Examle string field
+        description: Configure a property of type string
+      - reference: .properties.example_string_field_with_placeholder
+        label: Example string field with placeholder
+        description: Configurable property of type string with a placeholder
+        placeholder: I am an example string!
+      - reference: .properties.example_boolean
+        label: Example boolean field
+        description: Configure a boolean property
+      - reference: .properties.some_ip_address
+        label: Example IP address field
+        description: Enter some IP address (like Google's)
+    # Testing out the input entered into "Example IP address field" can actually ping the IP.
+    verifiers:
+      - name: Verifiers::StaticIpsVerifier
+        properties:
+          domain: .properties.some_ip_address
+   # - name: complex-form-selector
+   #   label: Compelx Form Type - Selector
+   #   description: A form with complex selector input
+   #   property_inputs:
+   #      - reference: .complex.
+   # - name: complex-form-collections
+   #   label: Compelx Form Type - Collections
+   #   description: A form with complex collection input
+   #   property_inputs:
+
+
+# Property Blueprints
+# A definition list of all the properties that can be used in any form (as long as it's prefaced with `.properties`.
+# The property blueprints declare the type of the field (i.e. string, boolean, ip_address, etc) and whether
+# it is configuration, or if there is a default value
+#
+# How are top-level property_blueprints different from nested property_blueprints?
+property_blueprints:
+  - name: example_string_field
+    type: string
+    configurable: true
+  - name: example_string_field_with_placeholder
+    type: string
+    configurable: true
+  - name: example_boolean
+    type: boolean
+    default: false
+    configurable: true
+  - name: some_ip_address
+    type: ip_address
+    optional: true
+    configurable: true
+
+
+# Job Types
+# A definition list of the jobs that end up in the BOSH manifest (which are defined in your BOSH release).
+#
+# BOSH jobs are "specific chucks of work that the release performs"
+# https://bosh.io/docs/jobs/
+job_types:
+
