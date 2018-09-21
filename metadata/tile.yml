@@ -12,8 +12,10 @@ stemcell_criteria:
   os: ubuntu-trustry
   version: "3586.42"
 releases:
+  # This section is redundant...
   - name: cf-cli
     file: cf-cli-1.5.0-97.0.0.tgz
+    version: 1.5.0
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
