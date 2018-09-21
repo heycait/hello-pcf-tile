@@ -13,8 +13,7 @@ stemcell_criteria:
   version: "3586.42"
 releases:
   - name: cf-cli
-    # file:
-    version: cf-cli-1.5.0-97.0.0.tgz
+    file: cf-cli-1.5.0-97.0.0.tgz
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
