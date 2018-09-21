@@ -1,0 +1,48 @@
+{
+  "id": 181,
+  "name": "olivedrab",
+  "iaas_type": "gcp",
+  "version": "2.2",
+  "ops_manager_version": "2.2-build.319",
+  "ert_version": "2.2.6",
+  "ops_manager": {
+    "url": "https://pcf.olivedrab.cf-app.com",
+    "username": "pivotalcf",
+    "password": "5bt9wl3o4gvvvc0k"
+  },
+  "apps_domain": "apps.olivedrab.cf-app.com",
+  "azs": [
+    "us-central1-f",
+    "us-central1-a",
+    "us-central1-c"
+  ],
+  "env_dns_zone_name_servers": [
+    "ns-cloud-c1.googledomains.com.",
+    "ns-cloud-c2.googledomains.com.",
+    "ns-cloud-c3.googledomains.com.",
+    "ns-cloud-c4.googledomains.com."
+  ],
+  "ert_cidr": "10.0.4.0/24",
+  "ert_gateway": "10.0.4.1",
+  "ert_subnet": "olivedrab-pas-subnet",
+  "http_lb_backend_name": "olivedrab-httpslb",
+  "ops_manager_cidr": "10.0.0.0/26",
+  "ops_manager_dns": "pcf.olivedrab.cf-app.com",
+  "ops_manager_gateway": "10.0.0.1",
+  "ops_manager_private_key": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----\n",
+  "ops_manager_public_ip": "35.224.127.105",
+  "ops_manager_public_key": "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDtSTjGko1RI5DcK7+bq/WvB2BiY1o1DXwNlYKnY2Yz3Je1dLj+HIKx4sw0TrEhWoohiHLjYjjp9bsJiAsvabogm1KpWc0IHiVLyn88yvgC5tYRrAd15ZXy5C5D7wWMJ8TaGqu9FYCYqW42AuL8YurQk/Bt1wxUGtqa7ZRsa20ufC+1+kCZBX6ge2qUaRGch7qscqsEyqo/fUnMNi86P3LDh38cZJFpAPGEmDb8Lh/3IE5yyOd8y8vSu2Q4mD83lrK5omYBo4T6SerUH/G6kl8lyxdCiWlDVXeyvjLc4jb1OmmWzhfNz29ZIVTrvEG7yRzvA4I4I/vznB11oQ4TG44jtYoaEbO9LJnY+UX9T6c+YjgZctBlzNp2AUL05Zc0zkRE3A4GnUmNMz7kQYlS/qMFs5rqiMRjcAH0BChKFfFbqNGGkSITtTg0q95n2zj0pZI+VC2ekR0CdTnkbA4XcTm9AI1lveVl79sQcPc57Xnf0ijh+Z3HdKc1Sv9ZQvs4wN6O2ypM6MKAN0bHY9FnLD1cS1T21Kno3GYEtSpXbQ7LoQaJf2U7ynO8gmHJpycwbpLt+Kz5EkRaMEPavNS/L8jy0mtcBh4dUvid6zsd6G1f7zkDlCvpiBoKqWuVkyT/Sm5lWG8Q2OrqRPJrUSrFnR71/b3wu3Z3DRoaDupht2m0jw==\n",
+  "ops_manager_subnet": "olivedrab-management-subnet",
+  "project": "cf-toolsmiths-pool-us-1",
+  "region": "us-central1",
+  "service_network_name": "olivedrab-pcf-network",
+  "services_cidr": "10.0.8.0/24",
+  "services_gateway": "10.0.8.1",
+  "service_subnet_name": "olivedrab-services-subnet",
+  "ssh_router_pool": "olivedrab-cf-ssh",
+  "sys_domain": "sys.olivedrab.cf-app.com",
+  "tcp_domain": "tcp.olivedrab.cf-app.com",
+  "tcp_router_pool": "olivedrab-cf-tcp",
+  "vm_tag": "olivedrab-vms",
+  "ws_router_pool": "olivedrab-cf-ws"
+}
