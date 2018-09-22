@@ -1,11 +1,11 @@
 ---
 # General Tile Metadata
-name: caitlyns-tile
+name: hello-pcf-tile
 product_version: 0.0.1
 minimum_version_for_upgrade: 0.0.0
 # Apparently this metadata_version refers to Ops Manager's version
 metadata_version: 2.2
-label: Caitlyn's Tile
+label: Hello PCF Tile
 description: An example no-op tile to get more familiar with Tile structures
 rank: 1
 stemcell_criteria:
