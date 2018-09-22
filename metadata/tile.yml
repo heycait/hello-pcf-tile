@@ -19,10 +19,11 @@ releases:
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
-# between different "froms".
+# between different "forms".
 #
-# This form contains references to properties defined in propert_blueprints as well as set
-# any built-in verifiers used to verify input entered into the property
+# This form contains references to properties defined in propert_blueprints as well as sets
+# any built-in verifiers used to verify input entered into the property (this verification happens
+# upon save of the form).
 form_types:
   - name: simple-form
     label: Simple Form Type
@@ -61,10 +62,10 @@ form_types:
 
 # Property Blueprints
 # A definition list of all the properties that can be used in any form (as long as it's prefaced with `.properties` for top-level
-# or the nested property if it's defined in a job type--aka from BOSH release--or within complex inputs??).
-
-# The property blueprints declare the type of the field (i.e. string, boolean, ip_address, etc) and whether
-# it is configuration, or if there is a default value.
+# or the nested property if it's defined in a job_type--aka from BOSH release--or within complex inputs??).
+#
+# The property_blueprints declare the type of the field (i.e. string, boolean, ip_address, etc) and whether
+# it is configurable, or if there is a default value.
 #
 # How are top-level property_blueprints different from nested property_blueprints?
 # Comparing to Ops Manager Example Tile, the nested property_blueprints appear to be for complex inputs (selectors and
