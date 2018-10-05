@@ -70,6 +70,8 @@ form_types:
 # How are top-level property_blueprints different from nested property_blueprints?
 # Comparing to Ops Manager Example Tile, the nested property_blueprints appear to be for complex inputs (selectors and
 # collections) to define the properties of the choices.
+#      The intent of nested property_blueprints is only for properties that are used for that particular job. Those on the top-level
+#      under `.properties` are meant for properties that can be used in various jobs
 property_blueprints:
   - name: example_string_field
     type: string
