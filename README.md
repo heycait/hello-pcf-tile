@@ -1,7 +1,7 @@
 # Hello PCF Tile
 This is an example no-op tile contained in one metadata file to get more familiar with [PCF Tile structure](https://docs.pivotal.io/tiledev/2-1/tile-basics.html). This is in opposition to how [kiln](https://github.com/pivotal-cf/kiln) works by separating out the different requirements of a Tile and "baking" it back into one (useful for very large tiles).
 
-# What are Tiles?
+## What are Tiles?
 
 > Product tiles make it easy for cloud operators to offer new and upgraded software services to developers in a Pivotal Cloud Foundry (PCF) deployment. Pivotal Network distributes these tiles as zipped code directories, with filename extension .pivotal, that contain or point to all of the software elements that perform the tile’s functions.
 >
@@ -24,7 +24,7 @@ Tiles are a way to package and configure instance groups and jobs for Pivotal Cl
 
 In the open source Cloud Foundry, ops files that are applied to your CF deployment are the functional equivalent of Ops Manager tiles.
 
-### What is Ops Manager?
+## What is Ops Manager?
 
 > Ops Manager is a web application that you use to deploy and manage a Pivotal Cloud Foundry (PCF) PaaS.
 >
