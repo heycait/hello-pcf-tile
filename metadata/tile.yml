@@ -12,7 +12,9 @@ stemcell_criteria:
   os: ubuntu-trustry
   version: "3586.42"
 releases:
-  # This section is redundant...
+  # This section is redundant... Although that's only because the releases themselves contain
+  # the version of the release and the stemcell it's compiled on in the file name which I suppose
+  # we can't always depend on
   - name: cf-cli
     file: cf-cli-1.5.0-97.0.0.tgz
     version: 1.5.0
@@ -24,6 +26,7 @@ releases:
 # This form contains references to properties defined in propert_blueprints as well as sets
 # any built-in verifiers used to verify input entered into the property (this verification happens
 # upon save of the form).
+#
 form_types:
   - name: simple-form
     label: Simple Form Type
