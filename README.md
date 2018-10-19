@@ -36,7 +36,7 @@ In the open source Cloud Foundry, ops files that are applied to your CF deployme
 >
 > *[Using Ops Manager](https://docs.pivotal.io/pivotalcf/2-3/customizing/ops-man.html)*
 
-When an operator configures a tile, Ops Manager takes the information, and under the hood, translates it into a BOSH manifest that gets applied to the Pivotal Cloud Floundry deployment.
+When an operator configures a tile, Ops Manager takes the information, and under the hood, translates it into a BOSH manifest (that defines properties for each job that the manifest deploys) which gets applied to the Pivotal Cloud Floundry deployment.
 
 Essentially, Ops Manager is a way to abstract away the complications that arise with generating and maintaining a massive [BOSH deployment manifest](https://bosh.io/docs/deployment-manifest/) and creating the appropriate ops files to configure your Cloud Foundry.
 
