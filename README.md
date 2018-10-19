@@ -47,14 +47,6 @@ The main purpose is to get a better handle on the different moving parts of a ti
 
 The idea of this exploration is translate the base understanding of a singular tile metadata file to how that corresponds to the using `kiln` to maintain an enormous tile, such as Pivotal Application Service.
 
-### TODOs
-
-- [ ] Include a selector form
-- [ ] Include a collection form
-- [ ] Add jobs from a BOSH release
-- [ ] Make an instance group and add the job to it
-- [ ] Add an errand?
-
 ## Learnings / Key Takeaways
 TBD
 
