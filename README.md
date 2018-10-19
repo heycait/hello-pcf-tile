@@ -6,7 +6,7 @@ This is an example no-op tile contained in one metadata file to get more familia
 > Product tiles make it easy for cloud operators to offer new and upgraded software services to developers in a Pivotal Cloud Foundry (PCF) deployment. Pivotal Network distributes these tiles as zipped code directories, with filename extension .pivotal, that contain or point to all of the software elements that perform the tile’s functions.
 >
 > In the Ops Manager Installation Dashboard, service tiles present a form-based interface that cloud operators use to configure the service. These configured properties become part of the BOSH manifest that PCF uses to deploy instances of the service.
-
+>
 > *—How Tiles Work*
 
 Tiles are composed of BOSH releases, a tile manifest, and migrations.
