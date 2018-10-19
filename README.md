@@ -55,6 +55,7 @@ TBD
 ### References
 * [How Tiles Work](https://docs.pivotal.io/tiledev/2-1/tile-structure.html)
 * [Product Template Reference (Ops Manager Manifest)](https://docs.pivotal.io/tiledev/2-1/product-template-reference.html)
+* [Property Reference](https://docs.pivotal.io/tiledev/2-1/property-reference.html#expressions)
 * [Ops Manager Example Tile Repo](https://github.com/pivotal-cf-experimental/ops-manager-example/blob/master/example-product/metadata/example-product.yml.erb)
 * [Ultimate Guide to BOSH](https://ultimateguidetobosh.com/releases/)
 * [BOSH docs](https://bosh.io/docs)
