@@ -16,7 +16,7 @@ releases:
   # the version of the release and the stemcell it's compiled on in the file name which I suppose
   # we can't always depend on
   - name: cf-cli
-    file: cf-cli-1.5.0-97.0.0.tgz
+    file: cf-cli-1.5.0-3586.52.0.tgz
     version: 1.5.0
 
 # Form Properties

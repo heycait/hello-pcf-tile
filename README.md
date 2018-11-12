@@ -75,3 +75,4 @@ Maybe these aren't actually needed according to the [Ops Manager Example Tile Re
 * [Tile Generator Tool](https://docs.pivotal.io/tiledev/2-1/tile-generator.html)
 * [PCF Command Line Utility](https://docs.pivotal.io/tiledev/2-3/pcf-command.html)
 * [Vagrant Box for Ops Manager](https://github.com/pivotal-cf/vagrant-ops-manager)
+* [smith](https://github.com/pivotal-cf-experimental/smith)
