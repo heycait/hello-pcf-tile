@@ -50,6 +50,18 @@ The idea of this exploration is translate the base understanding of a singular t
 ## Learnings / Key Takeaways
 TBD
 
+### Odd Findings
+
+For `resource_definition`, why must you specify `type: integer` for `ram`,
+`ephemeral_disk`, `persistent_disk`, and `cpu`? This feels like it should be
+built-in to Ops Manager and extracted from Tile Authors as it would just be
+duplicated for every `job_type`.
+
+For `instance_definition`, why must you specific `type: instances`? Isn't this
+implied? When would it ever been anything else? Along with that, why does this
+have a property called `label`?
+
+
 ### References
 * [How Tiles Work](https://docs.pivotal.io/tiledev/2-1/tile-structure.html)
 * [Product Template Reference (Ops Manager Manifest)](https://docs.pivotal.io/tiledev/2-1/product-template-reference.html)
