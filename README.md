@@ -61,6 +61,7 @@ For `instance_definition`, why must you specific `type: instances`? Isn't this
 implied? When would it ever been anything else? Along with that, why does this
 have a property called `label`?
 
+Maybe these aren't actually needed according to the [Ops Manager Example Tile Repo??](https://github.com/pivotal-cf-experimental/ops-manager-example/blob/master/example-product/metadata/example-product.yml.erb#L1019-L1038)
 
 ### References
 * [How Tiles Work](https://docs.pivotal.io/tiledev/2-1/tile-structure.html)
@@ -72,3 +73,5 @@ have a property called `label`?
 * [Ops Files](https://bosh.io/docs/cli-ops-files/)
 * [Deploying Cloud Foundry](https://docs.cloudfoundry.org/deploying/cf-deployment/deploy-cf.html)
 * [Tile Generator Tool](https://docs.pivotal.io/tiledev/2-1/tile-generator.html)
+* [PCF Command Line Utility](https://docs.pivotal.io/tiledev/2-3/pcf-command.html)
+* [Vagrant Box for Ops Manager](https://github.com/pivotal-cf/vagrant-ops-manager)
