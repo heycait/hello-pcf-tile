@@ -47,21 +47,8 @@ The main purpose is to get a better handle on the different moving parts of a ti
 
 The idea of this exploration is translate the base understanding of a singular tile metadata file to how that corresponds to the using `kiln` to maintain an enormous tile, such as Pivotal Application Service.
 
-## Learnings / Key Takeaways
-TBD
-
-### Odd Findings
-
-For `resource_definition`, why must you specify `type: integer` for `ram`,
-`ephemeral_disk`, `persistent_disk`, and `cpu`? This feels like it should be
-built-in to Ops Manager and extracted from Tile Authors as it would just be
-duplicated for every `job_type`.
-
-For `instance_definition`, why must you specific `type: instances`? Isn't this
-implied? When would it ever been anything else? Along with that, why does this
-have a property called `label`?
-
-Maybe these aren't actually needed according to the [Ops Manager Example Tile Repo??](https://github.com/pivotal-cf-experimental/ops-manager-example/blob/master/example-product/metadata/example-product.yml.erb#L1019-L1038)
+## Learnings / Key Takeaways / Odd Findings
+Refer to the sections in the Wiki
 
 ### References
 * [How Tiles Work](https://docs.pivotal.io/tiledev/2-1/tile-structure.html)
