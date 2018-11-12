@@ -9,8 +9,8 @@ label: Hello PCF Tile
 description: An example no-op tile to get more familiar with Tile structures
 rank: 1
 stemcell_criteria:
-  os: ubuntu-trustry
-  version: "3586.42"
+  os: ubuntu-trusty
+  version: "3586.52"
 releases:
   # This section is redundant... Although that's only because the releases themselves contain
   # the version of the release and the stemcell it's compiled on in the file name which I suppose
