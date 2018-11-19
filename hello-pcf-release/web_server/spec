@@ -1,0 +1,13 @@
+---
+name: web_server
+templates:
+  ctl.erb: bin/ctl
+  nginx_conf.erb: config/nginx.conf
+  mime.types: config/mime.types
+  index.html.erb: pages/index.html
+
+packages: [nginx]
+
+properties:
+  operator.message:
+    description: "This is the message you want displayed on the web page"
