@@ -1,1 +1,5 @@
 name: hello-pcf
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /Users/pivotal/go/src/github.com/pivotal-cf/hello-pcf-tile/hello-pcf-release/blobs

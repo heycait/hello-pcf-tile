@@ -18,6 +18,9 @@ releases:
   - name: cf-cli
     file: cf-cli-1.5.0-3586.52.0.tgz
     version: 1.5.0
+  - name: hello-pcf
+    file: hello-pcf-dev3.tgz
+    version: 0+dev.3
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
@@ -98,6 +101,38 @@ property_blueprints:
 # BOSH jobs are "specific chucks of work that the release performs"
 # https://bosh.io/docs/jobs/
 job_types:
+  - name: web_server
+    resource_label: Hello PCF Web Page
+    templates:
+      - name: web_server
+        release: hello-pcf
+    release: hello-pcf
+    single_az_only: true
+    max_in_flight: 1
+    resource_definitions:
+      - name: ram
+        configurable: false
+        default: 1024
+      - name: ephemeral_disk
+        configurable: true
+        default: 1024
+      - name: persistent_disk
+        configurable: true
+        default: 0
+      - name: cpu
+        configurable: false
+        default: 1
+    instance_definition:
+       name: instances
+       type: integer
+       configurable: false
+       default: 1
+    property_blueprints:
+      - name: operator_message
+        type: string
+    manifest: |
+      operator:
+        message: (( .properties.example_string_field.value ))
   - name: no-op-job
     resource_label: No-op Add CF CLI
     templates:
