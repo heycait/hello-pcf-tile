@@ -1,1 +1,6 @@
---- {}
+nginx/nginx-1.6.2.tar.gz:
+  size: 804164
+  sha: 1a5458bc15acf90eea16353a1dd17285cf97ec35
+nginx/pcre-8.36.tar.gz:
+  size: 2009464
+  sha: fb537757756818133d8157ec878bc11f5a93ef4d
