@@ -19,8 +19,8 @@ releases:
     file: cf-cli-1.5.0-3586.52.0.tgz
     version: 1.5.0
   - name: hello-pcf
-    file: hello-pcf-1.tgz
-    version: "1"
+    file: hello-pcf-3.tgz
+    version: "3"
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
@@ -37,8 +37,8 @@ form_types:
     # This section sets what fields are in the form which are references to properties
     # defined in the property_blueprints sections
     property_inputs:
-      - reference: .properties.example_string_field
-        label: Examle string field
+      - reference: .web_server.operator_message
+        label: The message to put on the web page
         description: Configure a property of type string
       - reference: .properties.example_string_field_with_placeholder
         label: Example string field with placeholder
@@ -79,9 +79,6 @@ form_types:
 #      The intent of nested property_blueprints is only for properties that are used for that particular job. Those on the top-level
 #      under `.properties` are meant for properties that can be used in various jobs
 property_blueprints:
-  - name: example_string_field
-    type: string
-    configurable: true
   - name: example_string_field_with_placeholder
     type: string
     configurable: true
@@ -130,9 +127,10 @@ job_types:
     property_blueprints:
       - name: operator_message
         type: string
+        configurable: true
     manifest: |
       operator:
-        message: (( .properties.example_string_field.value ))
+        message: (( operator_message.value ))
   - name: no-op-job
     resource_label: No-op Add CF CLI
     templates:
