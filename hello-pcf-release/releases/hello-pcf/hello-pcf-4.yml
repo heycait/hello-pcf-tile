@@ -1,0 +1,15 @@
+name: hello-pcf
+version: "4"
+commit_hash: 45fc145
+uncommitted_changes: true
+jobs:
+- name: web_server
+  version: 1a84ca3548e94bb8a81ef501c2b65501d6cb7150
+  fingerprint: 1a84ca3548e94bb8a81ef501c2b65501d6cb7150
+  sha1: 7a74c1e2614b9850235bfec0de2a5c5df8819c63
+packages:
+- name: nginx
+  version: 5c320955ce920bc255a6b6e56dbd756d54191ea8
+  fingerprint: 5c320955ce920bc255a6b6e56dbd756d54191ea8
+  sha1: b5fb784c578c52243861700048cc00b19c0f96ef
+  dependencies: []
