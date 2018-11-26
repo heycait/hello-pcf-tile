@@ -45,7 +45,7 @@ The goal of `hello-pcf-tile` is an exploration into tile structure, BOSH manifes
 
 The main purpose is to get a better handle on the different moving parts of a tile and document each part within the tile metadata itself. In particular, how each section relates to each other and how it translates in the Ops Manager UI as well as the underlying BOSH manifest.
 
-The idea of this exploration is translate the base understanding of a singular tile metadata file to how that corresponds to the using `kiln` to maintain an enormous tile, such as Pivotal Application Service.
+The idea of this exploration is translate the base understanding of a singular tile metadata file to how that corresponds to using `kiln` to maintain an enormous tile, such as Pivotal Application Service.
 
 ## Learnings / Key Takeaways / Odd Findings
 Refer to the sections in the Wiki
