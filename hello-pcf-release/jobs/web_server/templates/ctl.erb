@@ -1,21 +1,21 @@
-#!/bin/ba
+#!/bin/bash
 set -e
 
 RUN_DIR=/var/vcap/sys/run/web_server
 LOG_DIR=/var/vcap/sys/log/web_server
-JOB_dir=/var/vcap-jobs/web_server
-PIDFILE={RUN_DIR}/pidfile
+JOB_DIR=/var/vcap/jobs/web_server
+PIDFILE=${RUN_DIR}/pidfile
 
 case $1 in
   start)
     mkdir -p $RUN_DIR
     mkdir -p $LOG_DIR
-    chow vcap:vcap $LOG_DIR
+    chown vcap:vcap $LOG_DIR
 
     echo $$ > $PIDFILE
 
     pushd "${JOB_DIR}/pages" > /dev/null
-      ln -s /var/vcap/jobs/bosh-dns/config/certs
+      ln -sfn /var/vcap/jobs/bosh-dns/config/certs
     popd > /dev/null
 
     exec /var/vcap/packages/nginx/sbin/nginx \
@@ -32,7 +32,7 @@ case $1 in
    ;;
 
   *)
-    echo "Usage: ctl {start|stop"
+    echo "Usage: ctl {start|stop}"
   ;;
 
 esac
