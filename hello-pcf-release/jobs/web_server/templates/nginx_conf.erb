@@ -1,5 +1,5 @@
-pid /var/vcap/sys/run/web_server/pidfile;
-user vcap vcap
+id /var/vcap/sys/run/web_server/pidfile;
+user vcap vcap;
 
 events {
   worker_connections 1024;
@@ -12,7 +12,7 @@ http {
   error_log /var/vcap/sys/log/web_server/error.log;
 
   sendfile    on;
-  tcp_nonpush on;
+  tcp_nopush on;
   tcp_nodelay on;
 
   keepalive_timeout 65;
@@ -25,4 +25,3 @@ http {
     }
   }
 }
-
