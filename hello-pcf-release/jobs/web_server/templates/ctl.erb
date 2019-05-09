@@ -15,7 +15,7 @@ case $1 in
     echo $$ > $PIDFILE
 
     pushd "${JOB_DIR}/pages" > /dev/null
-      ln -s /var/vcap/jobs/bosh-dns/config/certs
+      ln -sfn /var/vcap/jobs/bosh-dns/config/certs
     popd > /dev/null
 
     exec /var/vcap/packages/nginx/sbin/nginx \
