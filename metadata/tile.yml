@@ -19,8 +19,8 @@ releases:
     file: cf-cli-1.25.0-621.59.tgz
     version: 1.25.0
   - name: hello-pcf
-    file: hello-pcf-4.tgz
-    version: "4"
+    file: hello-pcf-5.tgz
+    version: "5"
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar

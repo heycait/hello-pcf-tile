@@ -1,0 +1,17 @@
+name: hello-pcf
+version: "5"
+commit_hash: 10a1a19
+uncommitted_changes: false
+jobs:
+- name: web_server
+  version: a1dd00d2b654e494a38dc2fd092b2febeab664920aa8cd97e252ce84f7e5f278
+  fingerprint: a1dd00d2b654e494a38dc2fd092b2febeab664920aa8cd97e252ce84f7e5f278
+  sha1: sha256:59504d60f7363a504995ab5d7be3774137b6072970d68580be4ebacb0b172e1a
+  packages:
+  - nginx
+packages:
+- name: nginx
+  version: ac8357b57847ffe98fe27c5cedea0b18e40bf839a703a383b94b0370819fe3a5
+  fingerprint: ac8357b57847ffe98fe27c5cedea0b18e40bf839a703a383b94b0370819fe3a5
+  sha1: sha256:f673c13ca629fcf46487b34856329ca329e473d10a797ac8c9caab8cfe213482
+  dependencies: []
