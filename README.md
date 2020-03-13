@@ -7,6 +7,18 @@ This is an example tile contained in one metadata file to get more familiar with
  * Cloud Foundry contributors who want to understand how Ops Manager functions to deploy Pivotal Cloud Foundry
  * BOSH release authors who want to see how releases get incorporated into Pivotal Cloud Foundry
 
+### Quickstart
+
+Clone this repo. Then, from within the repo, create the tile
+(`hello-pcf-tile.pivotal`):
+
+```
+zip -r products/hello-pcf-tile-v99.pivotal . -i "*metadata/*" "migrations/*" "releases/*"
+```
+
+Log into Ops Manager. On the _Installation Dashboard_, click _Import a Product_.
+Upload `products/hello-pcf-tile-v99.pivotal`.
+
 ## What are Tiles?
 
 > Product tiles make it easy for cloud operators to offer new and upgraded software services to developers in a Pivotal Cloud Foundry (PCF) deployment. Pivotal Network distributes these tiles as zipped code directories, with filename extension .pivotal, that contain or point to all of the software elements that perform the tile’s functions.

@@ -9,18 +9,18 @@ label: Hello PCF Tile
 description: An example no-op tile to get more familiar with Tile structures
 rank: 1
 stemcell_criteria:
-  os: ubuntu-trusty
-  version: "3586.52"
+  os: ubuntu-xenial
+  version: "621.59"
 releases:
   # This section is redundant... Although that's only because the releases themselves contain
   # the version of the release and the stemcell it's compiled on in the file name which I suppose
   # we can't always depend on
   - name: cf-cli
-    file: cf-cli-1.5.0-3586.52.0.tgz
-    version: 1.5.0
+    file: cf-cli-1.25.0-621.59.tgz
+    version: 1.25.0
   - name: hello-pcf
-    file: hello-pcf-4.tgz
-    version: "4"
+    file: hello-pcf-5.tgz
+    version: "5"
 
 # Form Properties
 # An example "form" where the label will show up on the left-hand side as a navigation bar
