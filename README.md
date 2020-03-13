@@ -63,17 +63,16 @@ The idea of this exploration is translate the base understanding of a singular t
 Refer to the sections in the Wiki
 
 ### References
-* [How Tiles Work](https://docs.pivotal.io/tiledev/2-1/tile-structure.html)
-* [Product Template Reference (Ops Manager Manifest)](https://docs.pivotal.io/tiledev/2-1/product-template-reference.html)
-* [Property Reference](https://docs.pivotal.io/tiledev/2-1/property-reference.html#expressions)
+* [How Tiles Work](https://docs.pivotal.io/tiledev/2-8/tile-structure.html)
+* [Product Template Reference (Ops Manager Manifest Docs)](https://docs.pivotal.io/tiledev/2-8/product-template-reference.html)
 * [Ops Manager Example Tile Repo](https://github.com/pivotal-cf-experimental/ops-manager-example/blob/master/example-product/metadata/example-product.yml.erb)
+* [om CLI](https://github.com/pivotal-cf/om)— CLI for Ops Manager's API.
 * [Ultimate Guide to BOSH](https://ultimateguidetobosh.com/)
 * [BOSH docs](https://bosh.io/docs)
-* [BOSH release PCF Docs](https://docs.pivotal.io/tiledev/2-2/bosh-release.html)
+* [BOSH release PCF Docs](https://docs.pivotal.io/tiledev/2-8/bosh-release.html)
 * [learn-bosh-release](https://github.com/mariash/learn-bosh-release)
-* [Ops Files](https://bosh.io/docs/cli-ops-files/)
-* [Deploying Cloud Foundry](https://docs.cloudfoundry.org/deploying/cf-deployment/deploy-cf.html)
-* [Tile Generator Tool](https://docs.pivotal.io/tiledev/2-1/tile-generator.html)
-* [PCF Command Line Utility](https://docs.pivotal.io/tiledev/2-3/pcf-command.html)
-* [Vagrant Box for Ops Manager](https://github.com/pivotal-cf/vagrant-ops-manager)
+* [Ops Files](https://bosh.io/docs/cli-ops-files/) 
+* [Deploying Cloud Foundry](https://docs.cloudfoundry.org/deploying/cf-deployment/deploy-cf.html) — How to deploy CF withouth Ops Manager.
+* [Tile Generator Tool](https://docs.pivotal.io/tiledev/2-8/tile-generator.html) — Tool to generate a new tile template.
+* [PCF Command Line Utility](https://docs.pivotal.io/tiledev/2-8/pcf-command.html)
 * [smith](https://github.com/pivotal-cf-experimental/smith)
