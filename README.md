@@ -75,4 +75,4 @@ Refer to the sections in the Wiki
 * [Deploying Cloud Foundry](https://docs.cloudfoundry.org/deploying/cf-deployment/deploy-cf.html) — How to deploy CF withouth Ops Manager.
 * [Tile Generator Tool](https://docs.pivotal.io/tiledev/2-8/tile-generator.html) — Tool to generate a new tile template.
 * [PCF Command Line Utility](https://docs.pivotal.io/tiledev/2-8/pcf-command.html)
-* [smith](https://github.com/pivotal-cf-experimental/smith)
+* [smith](https://github.com/pivotal/smith)
