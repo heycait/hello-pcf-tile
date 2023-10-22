@@ -25,7 +25,7 @@ Upload `products/hello-pcf-tile-v99.pivotal`.
 >
 > In the Ops Manager Installation Dashboard, service tiles present a form-based interface that cloud operators use to configure the service. These configured properties become part of the BOSH manifest that PCF uses to deploy instances of the service.
 >
-> ![*—How Tiles Work* ](https://docs.pivotal.io/pivotalcf/2-3/customizing/images/interface.png)
+> [*How Tiles Work*](https://docs.pivotal.io/tiledev/2-8/tile-structure.html)
 
 Tiles are composed of BOSH releases, a tile manifest, and migrations.
 
