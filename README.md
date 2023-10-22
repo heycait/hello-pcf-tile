@@ -25,7 +25,7 @@ Upload `products/hello-pcf-tile-v99.pivotal`.
 >
 > In the Ops Manager Installation Dashboard, service tiles present a form-based interface that cloud operators use to configure the service. These configured properties become part of the BOSH manifest that PCF uses to deploy instances of the service.
 >
-> *—How Tiles Work*
+> ![*—How Tiles Work* ](https://docs.pivotal.io/pivotalcf/2-3/customizing/images/interface.png)
 
 Tiles are composed of BOSH releases, a tile manifest, and migrations.
 
@@ -34,8 +34,6 @@ The tiles shown in the Ops Manager dashboard below include:
 1. BOSH Director for GCP
 2. Pivotal Application Service
 3. MySQL for Pivotal Cloud Foundry v2
-
-![](https://docs.pivotal.io/pivotalcf/2-3/customizing/images/interface.png)
 
 ### How do tiles relate to Cloud Foundry?
 Tiles are a way to package and configure instance groups and jobs for Pivotal Cloud Foundry through the Ops Manager web UI. In particular, it provides the way to configure and deploy your Pivotal Cloud Foundry through the Pivotal Application Service (PAS) tile. They do not exist in the open source world.
